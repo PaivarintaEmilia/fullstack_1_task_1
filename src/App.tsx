@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 
@@ -13,10 +11,10 @@ interface CardProps {
 } */
 
 // muuttaa js objektin const muotoon eli ei voi enää muokata, as const pois niin sitten voi taas muokata
-const template = {
+/*const template = {
   text: "ei tekstiä",
   title: "ei titleä"
-} as const
+} as const*/
 
 
 
