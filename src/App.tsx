@@ -1,6 +1,9 @@
+//Styles
 import './App.css'
-import HighlightApi from './components/HighlightApi';
 import "./../public/styles/main.css";
+// Components
+import HighlightApi from './components/HighlightApi';
+import CanvasApi from './components/CanvasApi';
 
 
 
@@ -15,7 +18,8 @@ function App() {
         <HighlightApi></HighlightApi>
       </div>      
       <div className='api-container'>
-        <h2>API 2 | </h2>
+        <h2>API 2 | Canvas</h2>
+        <CanvasApi></CanvasApi>
  
       </div>
 
