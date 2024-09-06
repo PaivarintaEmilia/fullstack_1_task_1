@@ -4,6 +4,8 @@ import "./../public/styles/main.css";
 // Components
 import HighlightApi from './components/HighlightApi';
 import CanvasApi from './components/CanvasApi';
+import LocationApi from './components/LocationApi';
+
 
 
 
@@ -20,6 +22,11 @@ function App() {
       <div className='api-container'>
         <h2>API 2 | Canvas</h2>
         <CanvasApi></CanvasApi>
+ 
+      </div>      
+      <div className='api-container'>
+        <h2>API 3 | Location</h2>
+        <LocationApi></LocationApi>
  
       </div>
 
