@@ -9,6 +9,9 @@ const HighlightApi: React.FC = () => {
         // Muunna NodeList HTMLCollection:ksi
         paragraphs.forEach((pElement: HTMLElement) => {
             const text = pElement.textContent || '';
+
+            // KOKO LAUSEEN HIGHLIGHT
+            // Jos teksti sisältää sanan example niin suoritetaan tämä
             if (text.includes('example')) {
                 // Aseta tyyli
                 pElement.style.backgroundColor = 'red';
@@ -16,7 +19,7 @@ const HighlightApi: React.FC = () => {
             }
 
             // VAIN YHDEN SANAN HIGLIGHT
-            // Luo tyhjä taulukko sanoille
+            // Luo tyhjä taulukko sanoille (huom taas typescriptin määrittely)
             let words: string[] = [];
 
             // Pilko lause sanoiksi ja lisää taulukkoon
@@ -40,7 +43,7 @@ const HighlightApi: React.FC = () => {
             // Päivitä p-elementin sisältö uudella HTML:llä
             pElement.innerHTML = highlightedText;
         });
-    }, []);
+    }, []); // Tyhjä koska suoritetaan vaan kerran. useEffectin ominaisuus. 
 
     return (
         <div>
